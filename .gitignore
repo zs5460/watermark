@@ -1,0 +1,7 @@
+.vscode
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+dist/
+*.exe
+*.zip
