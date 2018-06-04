@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	_ "watermark/syso"
+	_ "github.com/zs5460/watermark/syso"
 
 	"github.com/golang/sys/windows/registry"
 	"github.com/nfnt/resize"
