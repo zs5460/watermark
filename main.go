@@ -187,5 +187,10 @@ func uninstall() {
 	k, _ := registry.OpenKey(registry.CLASSES_ROOT, `SystemFileAssociations\.jpg\shell`, registry.ALL_ACCESS)
 	registry.DeleteKey(k, `AddPwd\command`)
 	registry.DeleteKey(k, "AddPwd")
+
+	k, _ = registry.OpenKey(registry.CLASSES_ROOT, `SystemFileAssociations\.png\shell`, registry.ALL_ACCESS)
+	registry.DeleteKey(k, `AddPwd\command`)
+	registry.DeleteKey(k, "AddPwd")
+
 	fmt.Println("Uninstall Success!")
 }
