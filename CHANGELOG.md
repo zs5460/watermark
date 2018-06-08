@@ -6,5 +6,5 @@
 
 ## watermark 0.1.1 (May 29, 2018)
 
-* [FIX] Extension name case sensitivity issue 
+* [FIX] Extension name case sensitivity issue
 * [FIX] Add BSD license
