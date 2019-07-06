@@ -4,7 +4,7 @@ os:
   - windows
 
 go:
-  - tip
+  - auto
 
 before_install:
   - go get github.com/golang/sys/windows/registry
@@ -23,5 +23,4 @@ deploy:
   file: 
     - watermark.zip
   skip_cleanup: true
-  on:
-    tags: true
+
