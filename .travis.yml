@@ -1,7 +1,7 @@
 language: go
 
 go:
-  - tips
+  - tip
 
 before_install:
   - go get github.com/golang/sys/windows/registry
