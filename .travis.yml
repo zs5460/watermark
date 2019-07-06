@@ -4,7 +4,7 @@ go:
   - 1.12.x
 
 before_install:
-  - go get github.com/golang/sys/...
+  - go get github.com/golang/sys
   - go get -t -v ./...
 
 script:
