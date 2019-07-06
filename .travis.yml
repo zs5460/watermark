@@ -1,13 +1,9 @@
 language: go
 
-os:
-  - windows
-
 go:
-  - auto
+  - tip
 
 before_install:
-  - go get github.com/golang/sys/windows/registry
   - go get -t -v ./...
 
 script:

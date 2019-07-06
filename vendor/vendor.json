@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "GiLNESNK4dB/KWToYR5619rz8Gg=",
+			"path": "github.com/golang/sys/windows/registry",
+			"revision": "04f50cda93cbb67f2afa353c52f342100e80e625",
+			"revisionTime": "2019-06-26T21:29:17Z"
+		},
+		{
+			"checksumSHA1": "ARs6DX2FkmBhPs3eL9Znc9qaA1I=",
+			"path": "github.com/nfnt/resize",
+			"revision": "83c6a9932646f83e3267f353373d47347b6036b2",
+			"revisionTime": "2018-02-21T19:10:11Z"
+		},
+		{
+			"checksumSHA1": "fHxZYYJbqy8dddj7+eQsS5CrB6M=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "04f50cda93cbb67f2afa353c52f342100e80e625",
+			"revisionTime": "2019-06-26T21:29:17Z"
+		}
+	],
+	"rootPath": "github.com/zs5460/watermark"
+}
