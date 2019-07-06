@@ -1,5 +1,8 @@
 language: go
 
+os:
+  - windows
+
 go:
   - master
 
@@ -10,7 +13,7 @@ script:
   - go test -v ./...
 
 before_deploy:
-  - CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -o watermark.exe
+  - GOARCH=amd64 GOOS=windows go build -o watermark.exe
   - zip -r watermark.zip watermark.exe demo.jpg watermark.png
 
 deploy:
