@@ -1,7 +1,6 @@
 language: go
 
-go:
-  - tip
+os: windows
 
 before_install:
   - go get -t -v ./...
@@ -11,7 +10,7 @@ script:
 
 before_deploy:
   - GOARCH=amd64 GOOS=windows go build -o watermark.exe
-  - zip -r watermark.zip watermark.exe demo.jpg watermark.png
+  - 7z.exe a watermark.zip watermark.exe demo.jpg watermark.png
 
 deploy:
   provider: releases
