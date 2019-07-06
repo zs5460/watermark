@@ -1,0 +1,23 @@
+language: go
+
+go:
+  - master
+
+before_install:
+  - go get -t -v ./...
+
+script:
+  - go test -v ./...
+
+before_deploy:
+  - CGO_ENABLED=0 GOARCH=amd64 GOOS=windows go build -o watermark.exe
+  - zip -r watermark.zip watermark.exe demo.jpg watermark.png
+
+deploy:
+  provider: releases
+  api_key: "${GH_TOKEN}"
+  file: 
+    - watermark.zip
+  skip_cleanup: true
+  on:
+    tags: true
