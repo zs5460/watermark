@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/golang/sys/windows/registry"
+	"golang.org/x/sys/windows/registry"
 )
 
 func install() {
